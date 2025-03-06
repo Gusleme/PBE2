@@ -47,7 +47,7 @@ public class Cliente {
 		this.telefone = telefone;
 		this.dataNascimento = dataNascimento;
 	}
-	
+
 	// Getters e setters
 
 	public Long getIdCliente() {
@@ -98,7 +98,4 @@ public class Cliente {
 		this.dataNascimento = dataNascimento;
 	}
 
-	
-
-	
 }

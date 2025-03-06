@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereço</title>
+</head>
+<body>
+    <form id="enderecoClienteForm" method="post">
+
+        <h1>Joalheria joia joia </h1>
+        <p>"joias mais brilhantes que seu sorriso!!!"</p>
+            
+        <label>Estado </label>
+        <select name="objetivo" required id="estado">
+            <option value="">Selecione</option>
+            <option value="Acre"> AC </option>
+            <option value="Alagoas"> AL </option>
+            <option value="Amapa"> AP </option>
+            <option value="Amazonas"> AM </option>
+            <option value="Bahia"> BA </option>
+            <option value="Ceara"> CE </option>
+            <option value="Distrito Federal"> DF </option>
+            <option value="Espirito Santo"> ES </option>
+            <option value="Goias"> GO </option>
+            <option value="Maranhão"> MA </option>
+            <option value="Mato Grosso"> MT </option>
+            <option value="Mato Grosso do Sul"> MS </option>
+            <option value="Minas Gerais"> MG </option>
+            <option value="Para"> PA </option>
+            <option value="Paraiba"> PB </option>
+            <option value="Parana"> PR </option>
+            <option value="Pernanbuco"> PE </option>
+            <option value="Piaui"> PI </option>
+            <option value="Rio de Janeiro"> RJ </option>
+            <option value="Rio Grande do Norte"> RN </option>
+            <option value="Rio Grande do Sul"> RS </option>
+            <option value="Rondonia"> RO </option>
+            <option value="Roraima"> RR </option>
+            <option value="Santa Catarina"> SC </option>
+            <option value="Sao Paulo"> SP </option>
+            <option value="Sergipe"> SE </option>
+            <option value="Tocantins"> TO </option>
+        </select> 
+            <label class="endereco" for="endereco">Cidade:</label>
+            <input type="text" name="nome" id="cidade"
+            required = "required" autofocus><br>
+            <label class="bairro" for="bairro"> bairro:</label>
+            <input type="text" name="nome" id="bairro"
+             required = "required" autofocus><br>
+            <label class="rua" for="rua">Rua </label>
+            <input type="text" name="rua" id="rua">
+            <label class="cep" for="cep"> cep:</label>
+            <input type="text" name="nome" id="bairro"
+            
+            required><br>
+            
+            <label class="complemento" for="complemento">complemento</label>
+            <input type="text" name="complemento" id="complemento"
+            required><br>
+             <p> 
+            <input type="submit" value="Enviar" id="enviar">
+            </p>
+        </form>
+        <script src="scriptEndereco.js"></script>
+</body>
+</html>

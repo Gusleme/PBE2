@@ -12,38 +12,38 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.joalheriajoiasjoia.app.entities.Endereco;
-import br.com.joalheriajoiasjoia.app.services.EnderecoService;
+import br.com.joalheriajoiasjoia.app.entities.Material;
+import br.com.joalheriajoiasjoia.app.services.MaterialService;
 
 @RestController
 @RequestMapping("/material")
 public class MaterialController {
 
 	@Autowired
-	private EnderecoService enderecoService;
+	private MaterialService materialService;
 
 	@PostMapping
-	public Endereco createEndereco(@RequestBody Endereco endereco) {
-		return enderecoService.saveEndereco(endereco);
+	public Material createMaterial(@RequestBody Material material) {
+		return materialService.saveMaterial(material);
 	}
 
 	@GetMapping
-	public List<Endereco> getAllEndereco() {
-		return enderecoService.getAllEndereco();
+	public List<Material> getAllMaterial() {
+		return materialService.getAllMaterial();
 	}
 
 	@GetMapping("/{id}")
-	public Endereco getEndereco(@PathVariable Long id) {
-		return enderecoService.getEnderecoById(id);
+	public Material getMaterial(@PathVariable Long id) {
+		return materialService.getMaterialById(id);
 	}
 
 	@PutMapping
-	public Endereco editEndereco(@RequestBody Endereco endereco) {
-		return enderecoService.saveEndereco(endereco);
+	public Material editMaterial(@RequestBody Material material) {
+		return materialService.saveMaterial(material);
 	}
 
 	@DeleteMapping("/{id}")
-	public void deleteEndereco(@PathVariable Long id) {
-		enderecoService.deleteEndereco(id);
+	public void deleteMaterial(@PathVariable Long id) {
+		materialService.deleteMaterial(id);
 	}
 }
