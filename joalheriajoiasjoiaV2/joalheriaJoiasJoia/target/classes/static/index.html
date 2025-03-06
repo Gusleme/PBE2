@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario joalheria</title>
+</head>
+<body>
+     <form id="cadastroClienteForm" action="endereco.html" method="post">
+
+    <h1>Joalheria joia joia </h1>
+    <p>"joias mais brilhantes que seu sorriso!!!"</p>
+        
+        <label class="nome" for="nome">Nome:</label>
+        <input type="text" name="nome" id="nomeCliente"
+        required = "required" autofocus><br>
+        <label for="text"> Cpf:</label>
+        <input type="text" name="cpf" id="cpf" required
+        ><br>
+        <label class="telefone" for="telefone"> Telefone</label>
+        <input type="tel" name="telefone" id="telefone"
+        required><br>
+        <label class="email" for="email"> Seu email:</label>
+        <input type="email" name="nome" id="email"
+        required = "required" placeholder="exemplo chefinho@gmail.com" autofocus><br>
+        <br>
+        <label class="data" for="data">Data de nascimeto</label>
+        <input type="date" name="data de nascimeto" id="dtNascimento">
+        <p>
+        <input type="submit" value="Enviar" id="enviar">
+        </p>
+    </form>
+        <script src="scriptCadastro.js"></script>
+    </body>
+
+</html>
